@@ -365,11 +365,12 @@ p {
     justify-content: center;
     align-items: center;
 }
-/* Styles for the offer section */
 .offer {
   background-color: #f0f0f0;
   padding: 50px;
+
   text-align: center;
+  margin-top: 20%;
 }
 
 .offer h2 {
@@ -390,11 +391,133 @@ p {
   color: #666;
   margin-top: 10px;
 }
-.box{
-   padding: 20px 40px;
-   box-shadow: white 4px 4px;
+
+.box {
+  padding: 5px 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 17%;
 }
 
+.subscribe {
+  text-align: center;
+}
+
+.subscribe h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscribe p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.subscribe form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #9A0500;
+  text-decoration: underline;
+}
+
+.app-store {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.app-store img {
+  width: 150px;
+}
+.line{
+    margin-top: 4%;
+    margin-left: -6%;
+    color: gray;
+}
+.abc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.abc-left,
+.abc-center,
+.abc-right {
+  display: flex;
+  align-items: center;
+}
+
+.abc-left p {
+  margin: 0;
+}
+
+.abc-center a {
+  color: red;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.abc-right a {
+  margin-right: 10px;
+}
+
+.abc-right img {
+  width: 24px;
+  height: 24px;
+}
     </style>
 </head>
 <body>
@@ -555,6 +678,62 @@ p {
                         <h1>Get $2.99/meal + $1 Dumpling + $1 Garlic Bread + $1 <br> Bacon</h1>
                         <p>Try us risk-free. Skip or cancel your meal kit subscription anytime.</p>
                         <button>Get Offer</button>
+                      </div>
+                      <div class="container">
+                        <div class="subscribe">
+                          <h2>Subscribe for exclusive offers</h2>
+                          <p>Subscribe to our emails and get the latest product offers, recipe updates, and more.</p>
+                          <form>
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                          </form>
+                          <p>You can unsubscribe at any time.</p>
+                        </div>
+                      <div class="line">_______________________________________________________________________________________________________________________________________________________</div>
+                        <div class="footer">
+                          <div class="footer-section">
+                            <h4>Chefs Plate</h4>
+                            <ul>
+                              <li><a href="#">On the Menu</a></li>
+                              <li><a href="#">Pricing</a></li>
+                              <li><a href="#">Partnerships & Corporate Sales</a></li>
+                              <li><a href="#">Essential Workers Discount</a></li>
+                              <li><a href="#">Youth & Seniors Discount</a></li>
+                              <li><a href="#">Student Beans</a></li>
+                            </ul>
+                          </div>
+                      
+                          <div class="footer-section">
+                            <h4>Help Center</h4>
+                            <ul>
+                              <li><a href="#">Help Center and FAQ</a></li>
+                            </ul>
+                          </div>
+                      
+                          <div class="footer-section">
+                            <h4>Download our app</h4>
+                            <p>Manage your deliveries from anywhere, anytime.</p>
+                            <div class="app-store">
+                              <a href="#"><img src="app-store-badge.png" alt="App Store"></a>
+                              <a href="#"><img src="google-play-badge.png" alt="Google Play"></a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="line">_______________________________________________________________________________________________________________________________________________________</div>
+                        <div class="abc">
+                            <div class="abc-left">
+                              <p>© Chefs Plate 2024</p>
+                            </div>
+                            <div class="abc-center">
+                              <a href="#">Terms & Conditions</a>
+                              <a href="#">Privacy Policy</a>
+                            </div>
+                            <div class="abc-right">
+                              <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+                              <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+                            </div>
+                          </div>
                       </div>
                 </div>
             </div>
