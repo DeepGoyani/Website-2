@@ -18,98 +18,297 @@
             border-bottom: 2px solid #e0e0e0;
         }
 
-
         .navbar-links {
             display: flex;
-            text-decoration: none !important;
             align-items: center;
-            
-            margin-left:20px;
+            margin-left: 20px;
             color: black;
-           height: 30px;
-           
-            border:1px solid white
+            height: 30px;
+            border: 1px solid white;
         }
-        .navbar-links a{
+        
+        .navbar-links a {
             display: block;
             padding: 15px 20px;
             text-decoration: none;
             color: black;
             border: 5px solid white;
-
         }
-        .navbar-links :hover{
+        
+        .navbar-links a:hover {
             background-color: #FADBD1;
         }
-        .nav-left{
+        
+        .nav-left {
             display: flex;
-            margin-left: 37%;
-
+            margin-left: auto;
         }
-        .lan{
-            padding:10px 20px ;
-            color: #C10500;
-            background-color:#ECB19F ;
-           
-            border: 3px solid #C10500;
-        }
-        #french{
-            color:black !important;
-            border: 3px solid white;
-            background-color: white;
+        
+        .lan {
             padding: 10px 20px;
+            color: #C10500;
+            background-color: #ECB19F;
+            border: 3px solid #C10500;
+            cursor: pointer;
         }
-       #login{
-        background-color: white;
-        border-width: 2px;
-        border-radius: 7px;
-       }
+        
+        #french, #login {
+            border-color: white;
+            background-color: white;
+            border-width: 2px;
+            border-radius: 7px;
+        }
+        
+        #English {
+            border-radius: 7px;
+        }
+        
+        .img {
+            background-image: url(https://www.gimmesomeoven.com/wp-content/uploads/2014/10/Food-Photo-Sharing-Sites.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 380px;
+            width: 100%;
+        }
+        
+        .menu {
+            margin-left: -46%;
+            padding-top: 2%;
+            color: #333333;
+        }
+        
+        .dinner {
+            padding-left: 12%;
+            margin-top: -3%;
+        }
+        
+        .button {
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 170px;
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .step {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            flex: 1;
+        }
+
+        .step img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .step h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 1em;
+            color: #666;
+        }
+        .chefs{
+          margin-top:10%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .feature-icon {
+            min-width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            font-size: 1.5em;
+        }
+
+        .feature-content {
+            margin-left: 20px; /* Shifts the text slightly to the left */
+        }
+
+        .feature-content h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .feature-content p {
+            margin: 5px 0 0;
+            color: #666;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
     <div class="main">
         <div class="navbar">
-        
-            <div class="logo"><img src="https://img.hellofresh.com/w_128,q_100,f_auto,c_limit,fl_lossy/hellofresh_website/logo/whitelabel_logos_lg/cp_lg.png" alt="www.chefsplate.com"></div>
+            <div class="logo">
+                <img src="https://img.hellofresh.com/w_128,q_100,f_auto,c_limit,fl_lossy/hellofresh_website/logo/whitelabel_logos_lg/cp_lg.png" alt="www.chefsplate.com">
+            </div>
             <div class="navbar-links">
-                <div class="space"><a href="#">On the Menu</a></div>
+                <a href="#">On the Menu</a>
                 <a href="#">Pricing</a>
                 <a href="#" class="selected">FAQs</a>
-             </div>
-             <div class="nav-left">
+            </div>
+            <div class="nav-left">
                 <div class="lan" id="English"><b>English</b></div>
-                <div class="lan" id="french">Francais</div>
+                <div class="lan" id="french">Français</div>
                 <div class="lan" id="login">Login</div>
-             </div>
+            </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="img">
+                <div class="menu">
+                    <h1 class="h1cla">AND THE new dollar menu</h1><br>
+                </div>
+                <div class="dinner">
+                    <h3>Enjoy fuss-free dinner menu recipes at affordable prices</h3>
+                </div>
+                <div class="button" id="meal">
+                    <h5>Get $2.99/MEAL</h5>
+                </div>
+            </div>
+            <div class="chefs">
+                <h1>How Chefs Plate Meal Delivery Works</h1>
+    <div class="steps">
+        <div class="step">
+            <img src="https://imgs.search.brave.com/EnnTnQV4VwyaUgJzlSqEycfUGDUYEediLw72t4QGEwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UwL2Ux/LzJlL2UwZTEyZTlh/NjI5MjU3NDY4NGQ4/NWNjOTNkOTg2N2Ni/LmpwZw" alt="Choose your meals" height="250px">
+            <h2>You choose your meals</h2>
+            <p>Pick from a weekly menu of 25 easy-to-follow & tasty recipes</p>
+        </div>
+        <div class="step">
+            <img src="https://imgs.search.brave.com/EnnTnQV4VwyaUgJzlSqEycfUGDUYEediLw72t4QGEwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UwL2Ux/LzJlL2UwZTEyZTlh/NjI5MjU3NDY4NGQ4/NWNjOTNkOTg2N2Ni/LmpwZw" alt="We deliver meal kits" height="250px">
+            <h2>We deliver meal kits</h2>
+            <p>Our meal delivery services ship fresh ingredients right to your door</p>
+        </div>
+        <div class="step">
+            <img src="https://imgs.search.brave.com/EnnTnQV4VwyaUgJzlSqEycfUGDUYEediLw72t4QGEwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2UwL2Ux/LzJlL2UwZTEyZTlh/NjI5MjU3NDY4NGQ4/NWNjOTNkOTg2N2Ni/LmpwZw" alt="You cook dinner" height="250px">
+            <h2>You cook dinner</h2>
+            <p>Prepare delicious meals at home that are ready in 15 to 30 minutes</p>
+        </div>
+    </div>
+            </div>
+            <div class="about">
+                <h1>Why Chefs Plate</h1>
+    <div class="features">
+        <div class="feature">
+            <div class="feature-icon">📅</div>
+            <div class="feature-content">
+                <h2>Our Meal Kits Make Meal Planning Easy</h2>
+                <p>Order from a weekly menu of 25 tasty meals at the click of a button. Say goodbye to meal planning and grocery shopping with our meal kit delivery service!</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">📦</div>
+            <div class="feature-content">
+                <h2>You Get Dinner at Your Doorstep</h2>
+                <p>Open your box to discover everything you need to make delicious meals, including step-by-step recipe cards and fresh produce. Meal kits contain ice packs to keep everything fresh until you get home.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">💲</div>
+            <div class="feature-content">
+                <h2>You Save Time and Money</h2>
+                <p>Skip trips to the grocery store and cook easy, affordable meals in 15 to 30 minutes. Save time and enjoy the best part — eating!</p>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
     </div>
     <script>
-        const french=document.getElementById("french");
-        const English=document.getElementById("English");
-        const login=document.getElementById("login");
-        french.addEventListener("mouseleave",()=>{
-            french.style.color="black";
-            french.style.backgroundColor="white";
-            
+        const french = document.getElementById("french");
+        const english = document.getElementById("English");
+        const meal = document.getElementById("meal");
+        const login = document.getElementById("login");
+
+        french.addEventListener("mouseenter", () => {
+            french.style.color = "#C10500";
+            french.style.backgroundColor = "#ECB19F";
         });
-        french.addEventListener("mouseenter",()=>{
-            french.style.color="black";
-            french.style.backgroundColor="#ECB19F";
+        french.addEventListener("mouseleave", () => {
+            french.style.color = "#C10500";
+            french.style.backgroundColor = "white";
         });
-        login.addEventListener("mouseleave",()=>{
-            login.style.backgroundColor="white";
-            
+
+        login.addEventListener("mouseenter", () => {
+            login.style.backgroundColor = "#ECB19F";
         });
-        login.addEventListener("mouseenter",()=>{
-            login.style.backgroundColor="#ECB19F";
+        login.addEventListener("mouseleave", () => {
+            login.style.backgroundColor = "white";
         });
-        English.addEventListener("mouseleave",()=>{
-            English.style.border="3px solid #C10500";
-            
+
+        english.addEventListener("mouseenter", () => {
+            english.style.border = "1px solid #C10500";
         });
-        English.addEventListener("mouseenter",()=>{
-            English.style.border="1px solid #C10500";
+        english.addEventListener("mouseleave", () => {
+            english.style.border = "3px solid #C10500";
+        });
+        meal.addEventListener("mouseenter", () => {
+            meal.style.backgroundColor = "#9A0500";
+        });
+        meal.addEventListener("mouseleave", () => {
+            meal.style.backgroundColor = "red";
         });
     </script>
 </body>
