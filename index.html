@@ -355,6 +355,45 @@ p {
 #review{
     cursor: pointer;
 }
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles for the offer section */
+.offer {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.offer h2 {
+  margin-bottom: 20px;
+}
+
+.offer button {
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offer p {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
+}
+.box{
+   padding: 20px 40px;
+   box-shadow: white 4px 4px;
+}
 
     </style>
 </head>
@@ -500,16 +539,25 @@ p {
                     <h3>The meals I find are very tasty...</h3>
                     <p>The meals I find are very tasteful and of high quality. The serving size is perfect...</p>
                     <span class="author">Shelley Osborne, March 20</span>
-                </div>
-            </div>
-        
+                    
                 </div>
                 
             </div>
+            <div class="flex">
+                <div class="ratings">Rated <b>3.7</b>/5 based on 9,096 review. Showing our favourtite review</div><br>
+              
             
-        </div>
-        </div>
-    </div>
+            </div>
+            <div class="star">★ <b>TrustPilot</b></div>
+                </div>
+                <div class="box">
+                    <div class="offer">
+                        <h1>Get $2.99/meal + $1 Dumpling + $1 Garlic Bread + $1 <br> Bacon</h1>
+                        <p>Try us risk-free. Skip or cancel your meal kit subscription anytime.</p>
+                        <button>Get Offer</button>
+                      </div>
+                </div>
+            </div>
     <script>
         const french = document.getElementById("french");
         const english = document.getElementById("English");
@@ -517,20 +565,17 @@ p {
         const login = document.getElementById("login");
         const offer=document.getElementById("offer-btn");
         const menu=document.getElementById("menubar");
-        const review=document.getElementsByClassName("review-card");
+        const reviewCards = document.querySelectorAll('.review-card');
+        reviewCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.backgroundColor = "#FADBD1";
+    });
 
+    card.addEventListener('mouseleave', () => {
+        card.style.backgroundColor = "white";
+    });
+});
 
-        review.addEventListener("mouseenter",()=>{
-            for(i=0;i<review.length;i++){
-                review[i].style.backgroundColor = "#ECB19F";
-            }
-
-        }) 
-        review.addEventListener("mouseleave",()=>{
-           for(i=0;i<review.length;i++){
-            review[i].style.backgroundColor = "white";
-           }
-        })
         
         menu.addEventListener("mouseenter",()=>{
             menu.style.backgroundColor = "#9A0500";
