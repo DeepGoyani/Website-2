@@ -377,14 +377,7 @@ p {
   margin-bottom: 20px;
 }
 
-.offer button {
-  background-color: red;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 .offer p {
   font-size: 0.8em;
@@ -517,6 +510,18 @@ p {
 .abc-right img {
   width: 24px;
   height: 24px;
+}
+#getoffer{
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 7px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid red ;
+    background-color: red;
+    color: white;
+    margin-left: 47%;
+    margin-top: 3%;
 }
     </style>
 </head>
@@ -677,7 +682,8 @@ p {
                     <div class="offer">
                         <h1>Get $2.99/meal + $1 Dumpling + $1 Garlic Bread + $1 <br> Bacon</h1>
                         <p>Try us risk-free. Skip or cancel your meal kit subscription anytime.</p>
-                        <button>Get Offer</button>
+                        <div id="getoffer">Get Offer</div>
+
                       </div>
                       <div class="container">
                         <div class="subscribe">
@@ -685,7 +691,7 @@ p {
                           <p>Subscribe to our emails and get the latest product offers, recipe updates, and more.</p>
                           <form>
                             <input type="email" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
+                            <button id="mybutton" type="submit">Subscribe</button>
                           </form>
                           <p>You can unsubscribe at any time.</p>
                         </div>
@@ -694,12 +700,12 @@ p {
                           <div class="footer-section">
                             <h4>Chefs Plate</h4>
                             <ul>
-                              <li><a href="#">On the Menu</a></li>
-                              <li><a href="#">Pricing</a></li>
-                              <li><a href="#">Partnerships & Corporate Sales</a></li>
-                              <li><a href="#">Essential Workers Discount</a></li>
-                              <li><a href="#">Youth & Seniors Discount</a></li>
-                              <li><a href="#">Student Beans</a></li>
+                              <li class="list"><a href="#">On the Menu</a></li>
+                              <li class="list"><a href="#">Pricing</a></li>
+                              <li class="list"><a href="#">Partnerships & Corporate Sales</a></li>
+                              <li class="list"><a href="#">Essential Workers Discount</a></li>
+                              <li class="list"><a href="#">Youth & Seniors Discount</a></li>
+                              <li class="list"><a href="#">Student Beans</a></li>
                             </ul>
                           </div>
                       
@@ -726,8 +732,8 @@ p {
                               <p>© Chefs Plate 2024</p>
                             </div>
                             <div class="abc-center">
-                              <a href="#">Terms & Conditions</a>
-                              <a href="#">Privacy Policy</a>
+                              <a id="list" class="list" href="#">Terms & Conditions</a>
+                              <a class="list" href="#">Privacy Policy</a>
                             </div>
                             <div class="abc-right">
                               <a href="#"><img src="facebook.svg" alt="Facebook"></a>
@@ -738,6 +744,7 @@ p {
                 </div>
             </div>
     <script>
+        const getoffer=document.getElementById('getoffer');
         const french = document.getElementById("french");
         const english = document.getElementById("English");
         const meal = document.getElementById("meal");
@@ -745,6 +752,22 @@ p {
         const offer=document.getElementById("offer-btn");
         const menu=document.getElementById("menubar");
         const reviewCards = document.querySelectorAll('.review-card');
+        const subscribe=document.getElementById("mybutton")
+       
+
+        subscribe.addEventListener("mouseenter",() => {
+            subscribe.style.backgroundColor = "#C10500";
+        });
+        subscribe.addEventListener("mouseleave",() => {
+            subscribe.style.backgroundColor = "red";
+        }); 
+        
+        getoffer.addEventListener("mouseenter",()=>{
+            getoffer.style.backgroundColor = "#C10500";
+        });
+        getoffer.addEventListener("mouseleave",()=>{
+            getoffer.style.backgroundColor = "red";
+        });
         reviewCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
         card.style.backgroundColor = "#FADBD1";
